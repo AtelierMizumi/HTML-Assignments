@@ -3,25 +3,47 @@
 <head>
     <title>Background</title>
     <style>
-        div {
-            background-color: #98ABEEab;
-            margin-left: 30%;
-            margin-right: 30%;
+        .container {
+            background: rgb(245, 245, 165);
+            margin: 20% auto;
             color: black;
             text-shadow: 4px 4px 16px #ffffff;
-            text-align: center;
-        }
-        body {
-            background-image: url("../Images/flowers-background.jpg");
-            background-repeat: no-repeat;
+            width: 50%;
+            height: 50%;
             background-size: cover;
-        }1
+        }
+        .container img {
+            margin: 20 auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            max-width: 200px;
+        }
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .text-container h1 {
+            margin-top: 0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .text-container p {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
     </style>
 </head>
 <body>
-    <div>
-    <h1>TƯ DUY</h1>
-    <p>Con người là động vật có khả năng suy nghĩ. Nhưng có khả năng suy nghĩ không tự động dẫn đến biết cách suy nghĩ. Sự phát triển ngày càng đòi hỏi mỗi người phải biết làm việc, chủ yếu bằng cái đầu, để giải quyết các vấn đề gặp phải và ra các quyết định đúng.</p>
-    </div>
+    <div class="container">
+        <img src="../Images/astronaut.jpg" style="float: left;" vspace="20" hspace="10";>
+        <div class="text-container">
+          <h1>TƯ DUY</h1>
+          <p>Con người là động vật có khả năng suy nghĩ. Nhưng có khả năng suy nghĩ không tự động dẫn đến biết cách suy nghĩ. Sự phát triển ngày càng đòi hỏi mỗi người phải biết làm việc, chủ yếu bằng cái đầu, để giải quyết các vấn đề gặp phải và ra các quyết định đúng.</p>
+        </div>
+      </div>
 </body>
 </html>
