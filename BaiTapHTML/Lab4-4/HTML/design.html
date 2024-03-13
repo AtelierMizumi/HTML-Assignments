@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Tabs</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic styles for the tabs container and content area */
+        .tabs {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        /* Styles for the individual tabs */
+        .tab {
+            padding: 10px 20px;
+            margin-right: 5px;
+            cursor: pointer;
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            border-bottom: none;
+            transition: background-color 0.2s ease;
+        }
+
+        .tab:hover {
+            background-color: #ddd;
+        }
+
+        /* Style for the active tab */
+        .active {
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="tabs">
+        <button class="tab active" data-tab-link="tab1.html">Thiết kế website</button>
+        <button class="tab" data-tab-link="tab2.html">Viết nội dung web</button>
+        <button class="tab" data-tab-link="tab3.html">E-commerce</button>
+        <button class="tab" data-tab-link="tab4.html">Lập trình App Web</button>
+        <button class="tab" data-tab-link="tab5.html">Chương trình quảng cáo</button>
+        <button class="tab" data-tab-link="tab6.html">Hosting Tên miền</button>
+        <button class="tab" data-tab-link="tab7.html">Chứng chỉ</button>
+    </div>
+    <div id="tab-content"></div>
+
+    <script>
+        // Function to load tab content
+        // Function to load tab content
+        function loadTabContent(tabLink) {
+            const tabContent = document.getElementById('tab-content');
+            fetch(tabLink)
+                .then(response => response.text())
+                .then(htmlContent => {
+                    tabContent.innerHTML = htmlContent;
+
+                    // Fix the width of the tab content container
+                    const tabContentContainer = document.getElementById('tab-content-container');
+                    tabContentContainer.style.width = '100%';
+                })
+                .catch(error => {
+                    console.error("Error loading tab content:", error);
+                });
+        }
+
+
+        // Add event listeners to tabs
+        const tabs = document.querySelectorAll('.tab');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabLink = tab.getAttribute('data-tab-link');
+                loadTabContent(tabLink);
+                // Remove previous active class from all tabs
+                tabs.forEach(t => t.classList.remove('active'));
+                // Add active class to clicked tab
+                tab.classList.add('active');
+            });
+        });
+
+        // Load initial content (optional)
+        loadTabContent('tab1.html'); // Change this to the default tab
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phiếu thăm dò ý kiến</title>
+</head>
+<body>
+  <h1>Phiếu thăm dò ý kiến</h1>
+  <form action="submit.php" method="post">
+    <p>Tên đăng nhập:</p>
+    <input type="text" name="username" placeholder="Nhập tên đăng nhập">
+    <p>Giới tính:</p>
+    <input type="radio" name="gender" value="male"> Nam
+    <input type="radio" name="gender" value="female"> Nữ
+    <p>Những mục bạn thường quan tâm trên Internet:</p>
+    <input type="checkbox" name="interests[]" value="news"> Tin tức <br>
+    <input type="checkbox" name="interests[]" value="entertainment"> Giải trí <br>
+    <input type="checkbox" name="interests[]" value="education"> Góc học tập <br>
+    <input type="checkbox" name="interests[]" value="other"> Các mục khác 
+    <br>
+    <input type="submit" value="Gửi đi">
+    <input type="reset" value="Phục Hồi">
+  </form>
+</body>
+</html>

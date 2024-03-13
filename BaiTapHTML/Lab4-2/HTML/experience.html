@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-input {
+            width: 30%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: 1px solid #007bff;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+        .form-group {
+            width: 75%;
+        }
+
+        .btn:hover {
+            background-color: #0069d9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kinh nghiệm làm việc<span style="font-size: 75%; font-weight: 200; font-style: ;"> (bắt buộc) </span></h1>
+    <p>Hãy liệt kê những công việc mà bạn đã từng đảm nhận và thực hiện. Chú ý liệt kê kinh nghiệm làm việc từ thời gian gần đây nhất trở về trước.</p>
+    <fieldset>
+        <form action="#">  <div class="form-group">
+            <div class="form-group">
+                <label for="company" class="form-label">Công ty <span style="color: red;">*</span></label>
+                <input type="email" id="email" name="email" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="chucdanh" class="form-label">Chức danh <span style="color: red;">*</span></label>
+                <input type="chucdanh" id="chucdanh" name="chucdanh" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <div class="form-group">
+                    <label for="work-start" class="form-label">Thời gian làm việc</label>
+                    <div>
+                        <input type="Date" id="work-start" name="work-start" class="form-input">
+                        <input type="Date" id="work-end" name="work-end" class="form-input">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="salary" class="form-label">Mức lương </label>
+                <input type="number" id="salary" name="salary" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="motacongviec" class="form-label">Mô tả công việc <span style="color: red;">*</span></label>
+                <input type="motacongviec" id="motacongviec" name="motacongviec" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="thanhtich" class="form-label">Thành tích đạt được </label>
+                <input type="thanhtich" id="thanhtich" name="thanhtich" class="form-input" required>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </fieldset>
+</body>
+</html>

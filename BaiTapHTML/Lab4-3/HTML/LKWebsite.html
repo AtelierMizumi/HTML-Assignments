@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combo Box</title>
+</head>
+<body>
+  <select id=combo name="---- Tin tức ----" onchange="openPage()">
+    <option value="">---- Tin tức ----</option>
+    <option value="https://www.laodong.com.vn">Báo lao động</option>
+    <option value="https://www.vnexpress.net">Tin nhanh Việt Nam</option>
+    <option value="https://www.tuoitre.com.vn">Báo Tuổi trẻ</option>
+  </select>
+  <script>
+    function openPage() {
+      var selectBox = document.getElementById("combo");
+      var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+      if (selectedValue) {
+        window.open(selectedValue, "_blank"); // Mở trang web trong tab mới
+        // Hoặc window.location.href = selectedValue; để mở trang web trong cùng một tab
+      }
+    }
+    </script>
+</body>
+</html>

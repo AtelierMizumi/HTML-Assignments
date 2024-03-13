@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Adjust gap size as desired */
+            align-items: flex-start; /* Adjust alignment as needed */
+        }
+
+        .form-label {
+            margin-bottom: 5px;
+            display: block; /* Ensures labels appear above each field */
+        }
+    </style>
+</head>
+<body>
+    <h1>Application Form</h1>
+    <div class="form-container">
+        <label for="firstName" class="form-label">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br>
+
+        <label for="education" class="form-label">Education:</label>
+        <div>
+            <input type="radio" id="graduate" name="education" value="graduate">
+            <label for="graduate">Graduate</label>
+        </div>
+        <div>
+            <input type="radio" id="postGraduate" name="education" value="postGraduate">
+            <label for="postGraduate">Post Graduate</label>
+        </div><br>
+
+        <label for="gender" class="form-label">Gender:</label>
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+        </div>
+        <div>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div><br>
+
+        <label for="salary" class="form-label">Salary:</label>
+        <input type="number" id="salary" name="salary" required><br>
+
+        <label for="remarks" class="form-label">Remarks:</label>
+        <textarea id="remarks" name="remarks" rows="4" cols="50"></textarea><br>
+
+        <label for="country" class="form-label">Country:</label>
+        <select id="country" name="country">
+            <option value="australia">Australia</option>
+        </select><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </div>
+</body>
+</html>

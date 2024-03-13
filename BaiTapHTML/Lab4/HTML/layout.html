@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Layout</title>
+    <style>
+        div {
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <div class="top" style="background-color: green; color: white; position: absolute; width: 800px; height: 100px;"><b>Khối trên</b> (rộng 800px, cao 100px)</div>
+        <div style="position: relative; top: 100px; width: 800px;">
+            <div class="left" style="background-color: greenyellow ;position: absolute; left: 0; width: 150px; height: 400px;"><b>Khối trái</b> (rộng 150px, cao 400px)</div>
+            <div class="middle" style="background-color: white;position: absolute; left: 150px; width:  500px; height: 400px;"><b>Khối giữa</b> (rộng 500px, cao 400px)</div>
+            <div class="right" style="background-color: greenyellow; position: absolute; left: 650px; width: 150px; height: 400px;"><b>Khối phải</b> (rộng 150px, cao 400px)</div>
+        </div>
+        <div class="bottom" style="background-color:green; color: white; position: relative; top: 500px; width: 800px; height: 50px;"><b>Khối dưới</b> (rộng 800px, cao 50px)</div>
+    </main>
+
+</body>
+</html>

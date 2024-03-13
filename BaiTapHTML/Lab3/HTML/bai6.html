@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Feedback Form</title>
+    <style>
+        .form-label {
+            margin-bottom: 5px;
+            display: block; /* Ensures labels appear above each field */
+        }
+    </style>
+</head>
+<body>
+    <h1>Interview Feedback</h1>
+    <div class="form-container">
+        <label for="candidateName" class="form-label">Candidate Name:</label>
+        <input type="text" id="candidateName" name="candidateName" required><br>
+
+        <label for="positionAppliedFor" class="form-label">Position Applied For:</label>
+        <input type="text" id="positionAppliedFor" name="positionAppliedFor" required><br>
+
+        <label for="educationLevel" class="form-label">Education Level:</label>
+        <select id="educationLevel" name="educationLevel">
+            <option value="">Select Education Level</option>
+            <option value="highSchool">High School</option>
+            <option value="bachelorsDegree">Bachelor's Degree</option>
+            <option value="mastersDegree">Master's Degree</option>
+            <option value="doctoralDegree">Doctoral Degree</option>
+            <option value="professionalCertification">Professional Certification</option>
+        </select><br>
+
+        <label for="shouldHire" class="form-label">Should we hire this candidate?</label><br>
+        <input type="radio" id="yes" name="shouldHire" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="shouldHire" value="no">
+        <label for="no">No</label><br>
+
+        <label for="isGoodFit" class="form-label">Candidate is a good fit for:</label><br>
+        <div>
+            <input type="checkbox" id="existingTeam" name="isGoodFit[]" value="existingTeam">
+            <label for="existingTeam">Existing Team</label>
+        </div>
+        <div>
+            <input type="checkbox" id="futureGrowth" name="isGoodFit[]" value="futureGrowth">
+            <label for="futureGrowth">Future Growth</label>
+        </div>
+        <div>
+            <input type="checkbox" id="other" name="isGoodFit[]" value="other">
+            <label for="other">Other</label>
+        </div><br>
+
+        <label for="comments" class="form-label">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+
+        <button type="submit">Submit</button>
+    </div>
+</body>
+</html>

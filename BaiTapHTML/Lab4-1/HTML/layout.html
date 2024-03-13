@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Webpage Layout with Color</title>
+  <style>
+    body {
+      background-color: #f0f0f0; /* Light gray background */
+    }
+    
+    header {
+      background-color: #3498db; /* Blue header */
+      color: #fff; /* White text */
+      padding: 20px;
+    }
+    
+    main {
+      display: flex; /* Arrange content and sidebar side-by-side */
+    }
+    
+    section.content {
+      flex: 3; /* Content takes up 3 parts of the space */
+      padding: 20px;
+      border-right: 1px solid #ddd; /* Right border for separation */
+    }
+    
+    section.content h2 {
+      color: #3498db; /* Blue heading for content */
+    }
+    
+    aside.sidebar {
+      flex: 1; /* Sidebar takes up 1 part of the space */
+      padding: 20px;
+      background-color: #e8e8e8; /* Light gray sidebar */
+    }
+    
+    aside.sidebar h2 {
+      color: #3498db; /* Blue heading for sidebar */
+    }
+    
+    footer {
+      background-color: #3498db; /* Blue footer */
+      color: #fff; /* White text */
+      padding: 20px;
+      text-align: center; /* Center text in footer */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p>HEADER</p>
+  </header>
+  <main>
+    <section class="content">
+      <h2>CONTENT</h2>
+      <p>Example context.</p>
+    </section>
+    <aside class="sidebar">
+      <h2>SIDEBAR</h2>
+      <p>Really just another example context.</p>
+    </aside>
+  </main>
+  <footer>
+    <p>FOOTER</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+            input {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                width: 30%;
+                margin-bottom: 15px;
+            }
+            select {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                width: 31.5%;
+                margin-bottom: 15px;
+            }
+            button {
+                background-color: red;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                width: 30%;
+            }
+
+        }
+    </style>
+    <body>
+        <h1>User Registration</h1>
+        <form action="#">
+            <input type="text" id="username" name="username" placeholder="Tên đăng nhập, Email hoặc số điện thoại" required><br><br>
+            <input type="password" id="password" name="password" placeholder="Mật khẩu" required><br><br>
+            <select name="quoctich">
+                <option value="Việt Nam">Việt Nam</option>
+                <option value="Nhật Bản">Nhật Bản</option>
+                <option value="Canada">Canada</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <button type="submit">Đăng Nhập Ngay</button>
+            <p>
+                <hr style="margin-left: 35%; width: 10%; float: left;">
+                hoặc
+                <hr style="margin-right: 35%; width: 10%; float: right;">
+            </p>
+            <button id="register-button" style="background-color: black; color: white;">Tạo tài khoản mới</button>
+        </form>
+    </body>
+
+    <script>
+
+        const button = document.getElementById("register-button");
+      
+        button.addEventListener("click", function() {
+      
+          window.location.href = "./register.html";
+      
+        });
+      
+      </script>
+</html>

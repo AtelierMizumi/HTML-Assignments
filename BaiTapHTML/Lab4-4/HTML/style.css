@@ -1,0 +1,116 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Cấu hình chung */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #0073b7;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header h1 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+/* Tab navigation */
+nav {
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+nav ul li a {
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    transition: background-color 0.2s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+}
+
+nav ul li.active a {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Tab content */
+.tab-content {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+/* Other styles for individual elements */
+h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #0073b7;
+}
+
+a:hover {
+    color: #005997;
+}
+
+.btn {
+    background-color: #0073b7;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #0073b7;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #005997;
+}

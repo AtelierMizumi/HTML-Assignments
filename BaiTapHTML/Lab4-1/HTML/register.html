@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+            input {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                width: 50%;
+                margin-bottom: 15px;
+            }
+            select {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                width: 50%;
+                margin-bottom: 15px;
+            }
+            button {
+                background-color: red;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+        }
+    </style>
+    <body>
+        <h1>User Registration</h1>
+        <form action="#">
+            <input type="text" id="username" name="username" placeholder="Tên đăng nhập" required><br>
+            <input type="password" id="password" name="password" placeholder="Mật khẩu" required><br>
+            <input type="passwordagain" id="passwordagain" name="passwordagain" placeholder="Nhập lại mật khẩu" required><br>
+            <input type="email" id="email" name="email" placeholder="Email" required><br>
+            <p style="color: gray;">Bạn cẩn sử dụng email này trong trường hợp cần đặt lại mật khẩu</p><br>
+            <select name="quoctich">
+                <option value="Việt Nam">Việt Nam</option>
+                <option value="Nhật Bản">Nhật Bản</option>
+                <option value="Canada">Canada</option>
+            </select>
+            
+            <p style="color: gray;">Bằng việc bấm vào nút đăng kí bạn đã chấp nhận điều khoản về dịch vụ của chúng tôi</p><br>
+            <br>
+            <button type="submit" style="width: 30%; color: white; background-color: red; ">Đăng ký</button>
+        </form>
+    </body>
+</html>
