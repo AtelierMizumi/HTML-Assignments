@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 60%;
+            margin: 0 auto;
+        }
+        .form-row {
+            display: flex;
+            margin-bottom: 16px;
+        }
+        .form-label {
+            width: 200px;
+            text-align: right;
+            margin-right: 8px;
+        }
+        .form-input {
+            flex: 1;
+            margin-bottom: 8px;
+        }
+        h3 {
+            color: purple;
+        }
+        label {
+            color: #0000059a;
+        }
+        .fieldset {
+            padding: 8px 12px;
+            margin-bottom: 16px;
+            border: none;
+        }
+        .fieldset legend {
+            font-size: 1.2em;
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+                <label for="contentPreference" class="form-label">I prefer content from:</label>
+                <select id="contentPreference" class="form-input" name="contentPreference">
+                    <option value="yahooUS">Yahoo! U.S. in English</option>
+                </select>
+        <div>
+
+        <h3>1. Tell us about yourself</h3>
+        <form action="/submit_registration" method="post">
+            <div class="form-row">
+                <label for="firstName" class="form-label">First Name:</label>
+                <input type="text" id="firstName" class="form-input" name="firstName">
+            </div>
+            <div class="form-row">
+                <label for="lastName" class="form-label">Last Name:</label>
+                <input type="text" id="lastName" class="form-input" name="lastName">
+            </div>
+            <div class="form-row">
+                <label for="gender" class="form-label">Gender:</label>
+                <select id="gender" class="form-input" name="gender">
+                    <option>Rather not say</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="birthday" class="form-label">Birthday:</label>
+                <select id="birth-month" name="birth-month">
+                    <option>Month</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+                <input id="birdth-day" style="width: 10%;" type="text" placeholder="Day">
+                <input id="birdth-year" style="width: 10%;" type="text" placeholder="Year">
+
+            </div>
+            <div class="fieldset">
+                <h3>2. Select ID and Password</h3>
+                <div class="form-row">
+                    <label for="yahooID" class="form-label">Yahoo! ID and Email:</label>
+                    <input type="email" id="yahooID" style="width: 20%;" name="yahooID">
+                    @
+                    <select>
+                        <option>yahoo.com</option>
+                        <option>gmail.com</option>
+                    </select>
+                    <button>Check</button>
+                </div>
+                <div class="form-row">
+                    <label for="password" class="form-label">Password:</label>
+                    <input type="password" id="password" class="form-input" name="password">
+               </div>
+                <div class="form-row">
+                    <label for="passwordConfirm" class="form-label">Re-type Password:</label>
+                    <input type="password" id="passwordConfirm" class="form-input" name="passwordConfirm">
+                </div>
+                <div class="form-row">
+                    <label for="passwordStrength" class="form-label">Password Strength:</label>
+                    <span id="passwordStrength">Weak</span>
+                </div>
+            </div>
+            <div class="fieldset">
+                <h3>Incase you forget your ID or Password</h3>
+                <div class="form-row">
+                    <label for="securityQuestion1" class="form-label">1. Security Question: </label>
+                    <select>
+                        <option>What is your mother's maiden name?</option>
+                        <option>What is your pet's name?</option>
+                        <option>What is your favorite movie?</option>
+                        <option>What is your favorite color?</option>
+                    </select>    
+                </div>
+                <div class="form-row">
+                    <label for="securityAnswer1" class="form-label">Answer:</label>
+                    <input type="text" id="securityAnswer1" class="form-input" name="securityAnswer1">
+                </div>
+                <div class="form-row">
+                    <label for="securityQuestion2" class="form-label">2. Security Question:</label>
+                    <select>
+                        <option>What is your pet's name?</option>
+                        <option>What is your favorite movie?</option>
+                        <option>What is your favorite color?</option>
+                    </select>    
+                </div>
+                <div class="form-row">
+                    <label for="securityAnswer2" class="form-label">Answer:</label>
+                    <input type="text" id="securityAnswer2" class="form-input" name="securityAnswer2">
+                </div>
+            </div>
+            <div class="form-row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</body>
+</html>

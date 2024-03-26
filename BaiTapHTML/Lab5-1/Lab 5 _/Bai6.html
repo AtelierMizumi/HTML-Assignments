@@ -1,0 +1,279 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>List Songs</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<style>
+		.container {
+			width: 60%;
+			height: auto;
+			margin: 0 auto;
+			border: 1px solid #dbdbdb;
+			border-radius: 10px;
+			box-shadow: 5px 5px 10px #f0efef;
+		}
+
+		.title {
+			padding: 10px;
+			font-family: 'Inter', sans-serif;
+			font-size: 1.3rem;
+			color: #616161;
+		}
+
+		ul {
+			list-style-type: none;
+			display: flex;
+			flex-direction: column;
+		}
+
+		li {
+			margin-left: -20px;
+			height: 60px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			/* justify-content: space-between; */
+			padding: 10px;
+			border-bottom: 1px solid #000;
+		}
+
+		.connect {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.number {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 1.3rem;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background-color: #ededed;
+			color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+
+
+		.connect-line {
+			font-size: 20px;
+			font-weight: bold;
+			width: 30px;
+			height: 30px;
+			text-align: center;
+			align-items: center;
+			margin-top: -40px;
+			height: 2px;
+		}
+
+		.media {
+			display: flex;
+			justify-content: left;
+
+		}
+
+		.media .song-thum {
+			width: 70px;
+			height: 70px;
+			flex-shrink: 0;
+			display: block;
+		}
+
+		.media .song-thum img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 5px;
+		}
+
+		.title-wrapper span {
+			color: #0b0a0a;
+			cursor: pointer;
+			line-height: 1.3;
+			letter-spacing: normal;
+			font-family: "Inter", sans-serif;
+			font-stretch: 100%;
+			font-size: 1rem;
+			font-weight: 600;
+			margin: 10px;
+			text-transform: none;
+			vertical-align: top;
+		}
+
+		.media .card-info {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			margin-left: 10px;
+			text-align: left;
+			/* border: 1px solid #e0e0e0; */
+		}
+
+		.artist-wrapper span {
+			color: #a38cac;
+			font-family: "Inter", sans-serif;
+			font-stretch: 100%;
+			font-weight: 500;
+			font-size: 0.8rem;
+			line-height: 1.3;
+			margin: 10px;
+			text-transform: none;
+			vertical-align: top;
+		}
+
+		a {
+			text-decoration: none;
+			/* color: #000; */
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="title">
+			<span>NGHE TẤT CẢ <i class="material-icons">&#xe039;</i></span>
+		</div>
+		<ul>
+			<li>
+				<div class="connect">
+					<div class="number" style="color: #4d92e3;">1</div>
+					<div class="connect-line">_</div>
+				</div>
+				<div class="media">
+					<div class="song-thum">
+						<img src="icons/pic1.png" alt="The Thumbnail" width="40px" />
+					</div>
+					<div class="card-info">
+						<div class="title-wrapper">
+							<a href="https://zingmp3.vn/bai-hat/Den-Bao-Gio-Ca-Hoi-Hoang-Dat-Maniac/ZW9ABC8Z.html"
+								target="_blank">
+								<span>Ngắm Hoa Lệ Rơi</span>
+							</a>
+						</div>
+						<div class="artist-wrapper">
+							<span>Châu Khải Phong</span>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="connect">
+					<div class="number" style="color: #19b672;">2</div>
+					<div class="connect-line">_</div>
+				</div>
+				<div class="media">
+					<div class="song-thum">
+						<img src="icons/pic2.png" alt="The Thumbnail" width="40px" />
+					</div>
+					<div class="card-info">
+						<div class="title-wrapper">
+							<a href="https://zingmp3.vn/bai-hat/Den-Bao-Gio-Ca-Hoi-Hoang-Dat-Maniac/ZW9ABC8Z.html"
+								target="_blank">
+								<span>Cô Gái M52</span>
+							</a>
+						</div>
+						<div class="artist-wrapper">
+							<span>Huy, Tùng Vu</span>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="connect">
+					<div class="number" style="color: #d95a24;">3</div>
+					<div class="connect-line">_</div>
+				</div>
+				<div class="media">
+					<div class="song-thum">
+						<img src="icons/pic3.png" alt="The Thumbnail" width="40px" />
+					</div>
+					<div class="card-info">
+						<div class="title-wrapper">
+							<a href="https://zingmp3.vn/bai-hat/Den-Bao-Gio-Ca-Hoi-Hoang-Dat-Maniac/ZW9ABC8Z.html"
+								target="_blank">
+								<span>Cùng Anh</span>
+							</a>
+						</div>
+						<div class="artist-wrapper">
+							<span>Ngọc Dolit, Hagi, STee</span>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="connect">
+					<div class="number" style="color: #000;">4</div>
+					<div class="connect-line">_</div>
+				</div>
+				<div class="media">
+					<div class="song-thum">
+						<img src="icons/pic4.png" alt="The Thumbnail" width="40px" />
+					</div>
+					<div class="card-info">
+						<div class="title-wrapper">
+							<a href="https://zingmp3.vn/bai-hat/Den-Bao-Gio-Ca-Hoi-Hoang-Dat-Maniac/ZW9ABC8Z.html"
+								target="_blank">
+								<span>Người Lạ Ơi</span>
+							</a>
+						</div>
+						<div class="artist-wrapper">
+							<span>Karik, Orange, Superbrother</span>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="connect">
+					<div class="number" style="color: #000;">5</div>
+					<div class="connect-line">_</div>
+				</div>
+				<div class="media">
+					<div class="song-thum">
+						<img src="icons/pic5.png" alt="The Thumbnail" width="40px" />
+					</div>
+					<div class="card-info">
+						<div class="title-wrapper">
+							<a href="https://zingmp3.vn/bai-hat/Den-Bao-Gio-Ca-Hoi-Hoang-Dat-Maniac/ZW9ABC8Z.html"
+								target="_blank">
+								<span>Mình Cưới Nhau Đi</span>
+							</a>
+						</div>
+						<div class="artist-wrapper">
+							<span>Huỳnh James, Pjnboys</span>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="connect">
+					<div class="number" style="color: #000;">6</div>
+					<div class="connect-line">_</div>
+				</div>
+				<div class="media">
+					<div class="song-thum">
+						<img src="icons/pic6.png" alt="The Thumbnail" width="40px" />
+					</div>
+					<div class="card-info">
+						<div class="title-wrapper">
+							<a href="https://zingmp3.vn/bai-hat/Den-Bao-Gio-Ca-Hoi-Hoang-Dat-Maniac/ZW9ABC8Z.html"
+								target="_blank">
+								<span>Buồn Của Anh</span>
+							</a>
+						</div>
+						<div class="artist-wrapper">
+							<span>K-ICM, Masew, Đạt G</span>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+
+</html>
