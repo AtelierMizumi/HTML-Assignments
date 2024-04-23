@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button Demo</title>
+</head>
+<body>
+    <input type="radio" name="light" value="on" onchange="changeLight()">Light on
+    <input type="radio" name="light" value="off" onchange="changeLight()">Light off
+    <p id="result"></p>
+    <script>
+        function changeLight() {
+            let lightStatus = document.querySelector('input[name="light"]:checked').value;
+            if (lightStatus === "on") {
+                document.getElementById("result").innerText = "The light is on.";
+            } else {
+                document.getElementById("result").innerText = "The light is off.";
+            }
+        }
+    </script>
+</body>
+</html>

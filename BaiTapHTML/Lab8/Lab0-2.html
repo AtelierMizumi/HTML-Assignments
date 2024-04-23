@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textfield Events Demo</title>
+</head>
+<body>
+    <input type="text" id="myInput" onblur="showBlurMessage()" onfocus="showFocusMessage()" onchange="showChangeMessage()">
+    <p id="message"></p>
+    <script>
+        function showBlurMessage() {
+            document.getElementById("message").innerText = "You clicked outside the textbox!";
+        }
+
+        function showFocusMessage() {
+            document.getElementById("message").innerText = "You clicked inside the textbox!";
+        }
+
+        function showChangeMessage() {
+            document.getElementById("message").innerText = "You changed the content!";
+        }
+    </script>
+</body>
+</html>

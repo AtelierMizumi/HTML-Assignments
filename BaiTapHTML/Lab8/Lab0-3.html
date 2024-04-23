@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Command Button Demo</title>
+</head>
+<body>
+    <textarea id="sourceText" rows="4" cols="50"></textarea><br>
+    <button onclick="copyText()">Copy</button><br>
+    <textarea id="targetText" rows="4" cols="50"></textarea>
+    <script>
+        function copyText() {
+            let sourceText = document.getElementById("sourceText").value;
+            document.getElementById("targetText").value = sourceText;
+        }
+    </script>
+</body>
+</html>
