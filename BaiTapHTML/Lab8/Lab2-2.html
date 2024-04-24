@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onChange Event</title>
+</head>
+<body>
+    <input type="text" id="myInput">
+    <p id="message"></p>
+
+    <script>
+        document.getElementById("myInput").onchange = function() {
+            let value = this.value.trim();
+            if (!isNaN(value) && value !== "") {
+                document.getElementById("message").innerText = "Thank you";
+            } else {
+                document.getElementById("message").innerText = "Please enter a numeric value";
+            }
+        };
+    </script>
+</body>
+</html>
