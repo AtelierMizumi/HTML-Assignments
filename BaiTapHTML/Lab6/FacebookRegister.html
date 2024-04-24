@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Facebook Register</title>
+    <style>
+        * {
+            font-size: 20px;
+        }
+        body {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+        #wrapper {
+            background: rgb(2,0,36);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(161, 225, 237, 0.243) 100%);
+            width: 30%;
+            height: 40%;
+            padding: 20px;
+            border: 1px solid gray;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: green;
+        }
+        input[type=text] input[type=password] {
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #20aff77c;
+            float: left;
+        }
+
+        input[type=text], input[type=password] {
+            margin-bottom: 10px !important; /* Adjust spacing between inputs */
+        }
+
+        ::placeholder {
+            color: gray;
+        }
+    
+        select {
+            margin-bottom: 10px1;
+            border: 1px solid gray;
+            margin: 0;
+        }
+        a:link {
+            font-size: 16px;
+            color: blue;
+            ::onhover {
+                color: blue;
+            }
+            text-decoration-line: none;
+        }
+        a:visited {
+            font-size: 16px;
+            color: rgb(67, 67, 67);
+            ::onhover {
+                color: blue;
+            }
+            text-decoration-line: none;
+        }
+        a:hover {
+            font-size: 16px;
+            text-decoration-line: none;
+            color: blue;
+        }
+        #submit {
+            padding: 2% 4%;
+            background: linear-gradient(0deg, rgb(0, 114, 27) 0%, rgb(0, 155, 41) 100%); 
+            color: white; 
+            border: none; 
+            font-family: Arial, sans-serif;
+            font-weight: 600;
+            border-radius: 4px;
+            border: 2x solid rgb(0, 100, 0);
+        }
+        p {
+            font-size: 12px;
+            color: gray;
+        }
+        #column {
+            display: flex;
+            flex-direction: row;
+        }
+        #block {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+    <h1>Đăng ký</h1>
+    <h3>Luôn miễn phí</h3>
+    <form >
+        <div class="column">
+            <input style="width: 6em;" type="text" name="firstName" placeholder="Họ">
+            <input style="width: 6em;" type="text" name="lastName" placeholder="Tên">
+        </div>
+        <input style="width: 13em;" type="text" name="email" placeholder="Số điện thoại hoặc email">
+        <br>
+        <input style="width: 13em;" type="password" name="password" placeholder="Mật khẩu">
+        <br>
+        <br>
+        <label>Ngày sinh</label>
+        <br>
+        <select name="day">
+            <option>15</option>
+        </select>
+        <select name="month">
+            <option>Tháng 12</option> 
+        </select>
+        <select name="year">
+            <option>1993</option>
+        </select>
+        <a href="#"><p>Tại sao tôi phải cung cấp ngày sinh của mình?</p></a>
+
+        <input type="radio" id="male" name="gender" value="Nam">
+        <label for="male">Nam</label>
+        <input type="radio" id="female" name="gender" value="Nữ">
+        <label for="male">Nữ</label>
+        <input type="radio" id="other" name="gender" value="Khác">
+        <label for="other">Khác</label>
+        <br>
+        <p>Bằng cách nhấp vào Đăng ký, bạn đồng ý với <a href            border-radius: 4px;
+            border: 1px solid #20aff77c;="#">Điều khoản</a>, <a href="#">Chính sách dữ liệu</a> và <a href="#">Chính sách cookie</a> của chúng tôi. Bạn có thể nhận được thông báo qua SMS từ Facebook và có thể hủy nhận bất kỳ lúc nào.</p>
+            
+        <button id="submit">Đăng ký</button>
+    </form>
+</div>
+</body>
+</html>

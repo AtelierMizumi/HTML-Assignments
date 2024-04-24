@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Responsive Form</title>
+        <style>
+            /* Do không gửi được 2 file nên phải chắp vá styles.css vào header */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    background: url(background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#wrapper {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    width: 35%;
+    padding: 10px;
+    border-radius: 18px 18px 18px ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    margin: 7px;
+}
+
+#wrapper .form {
+    padding: 20px;
+}
+
+.form .element-row {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* cái này là thứ căn lề input đẹp vc */
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+.form .element-row-no-space-between {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.form .element-row label {
+    display: block;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.form .element-row input {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    color: #333;
+    font-size: 1.2em;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form .element-row .nameInput {
+    width: 100%;
+    position: relative;
+    color: #333;
+    font-size: 1.2em;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.submit {
+    width: 60%;
+    height: 60px;
+    border-radius: 8px;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #007710;
+    color: white;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    color: #333;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-weight: regular;
+    text-align: center;
+    color: #444;
+}
+
+hr {
+    border: 1px solid #ccc;
+    color: #bbb;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #555;
+    margin: 0;
+}
+
+input[type="radio"] {
+    transform: scale(0.6);
+  }
+  
+  .radio-option {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    border-radius: 8px;
+    height: 40px;
+    border: 1px solid #ccc;
+  }
+  
+  .radio-option label {
+    margin-left: 10px;
+  }
+
+select {
+    flex-grow: 1;
+    height: 42px;
+    background-color: #fff;
+    position: relative;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    ::option
+    {
+        font-size: 1.2em;
+        color: #333;
+    }
+}
+
+button {
+    font-size: 1.2em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+        <form class="form">
+            <p style="font-weight: bold; font-size: 38px; text-align: center;">Tạo tài khoản mới</p>
+            <p style="color: #777; font-size: 20px; text-align: center;">Nhanh chóng và dễ dàng</p>
+            <hr>
+            <div class="element-row">
+                <input type="text" name="firstname" placeholder="Họ"/>
+                <input type="text" name="lastname" placeholder="Tên"/>
+            </div>
+            <div class="element-row">
+            <input type="text" name="login" placeholder="Số di động hoặc email"/>
+            </div>
+            <div class="element-row">
+            <input type="password" name="password" placeholder="Mật khẩu mới"/>
+            </div>
+            <br>
+            <p style="font-size: 18px;">Ngày sinh</p>
+            <div class="element-row">
+                <select name="day">
+                    <option>15</option>
+                </select>
+                <select name="month">
+                    <option>Tháng 12</option>
+                </select>
+                <select name="year">
+                    <option>1993</option>
+                </select>
+            </div>
+            <br>
+            <p style="font-size: 18px;">Giới tính</p>
+
+            <div class="element-row">
+            
+              <div class="radio-option">
+            
+                <label for="male">Nam</label> 
+                <input type="radio" id="male" name="gender" value="male">
+            
+            
+              </div>
+            
+              <div class="radio-option">
+            
+
+                <label for="female">Nữ</label>  
+                <input type="radio" id="female" name="gender" value="female">
+              </div>
+              <div class="radio-option">
+                <label for="other">Khác</label>
+                <input type="radio" id="other" name="gender" value="other">
+              </div>
+            </div>
+            <br>
+            <br>
+            <div style="text-align: center;">
+            <button class="submit">Đăng ký</button>
+            </div>
+            <br>
+            <a href=""><p style="text-align: center;">Bạn đã có tài khoản ư ?</p></a>
+            </form>
+        </div>
+    </body>
+</html>
